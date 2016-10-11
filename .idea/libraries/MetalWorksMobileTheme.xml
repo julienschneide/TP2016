@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="MetalWorksMobileTheme" type="flex">
+    <CLASSES>
+      <root url="jar://C:/dev/feathers-ui-3.0.4/themes/MetalWorksMobileTheme/swc/MetalWorksMobileTheme.swc!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

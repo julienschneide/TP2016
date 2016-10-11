@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="starling" type="flex">
+    <CLASSES>
+      <root url="jar://C:/dev/starling-2.1/starling/bin/starling.swc!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
