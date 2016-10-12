@@ -1,19 +1,25 @@
 package ch.hegarc.ig.TP2016.app {
 
-    import ch.hegarc.ig.TP2016.presentation.Welcome;
+    import feathers.controls.Button;
+    import feathers.controls.TextCallout;
+    import feathers.themes.MetalWorksMobileTheme;
 
-    import flash.display.Sprite;
+    import starling.display.Sprite;
+    import starling.text.TextField;
 
-    import starling.core.Starling;
-
-    [SWF(width="1920", height="1080", frameRate="60", backgroundColor="#fff444")]
     public class Main extends Sprite {
 
-        private var _starling:Starling;
+        private var _btnConnect:Button;
 
         public function Main() {
-            _starling = new Starling(Welcome, stage);
-            _starling.start();
+
+            var textfield:TextField = new TextField(400,200, "Welcome !");
+            addChild(textfield);
+
+            _btnConnect = new Button();
+            _btnConnect.label = "Se connecter";
+            addChild(_btnConnect);
+
         }
     }
 }
