@@ -1,10 +1,15 @@
 package ch.hegarc.ig.TP2016.presentation {
 
-    import feathers.controls.Button;
+import ch.hegarc.ig.TP2016.presentation.controllers.LoginController;
+import ch.hegarc.ig.TP2016.presentation.screens.LoginScreen;
+import ch.hegarc.ig.TP2016.presentation.screens.Screen;
+
+import feathers.controls.Button;
 import feathers.controls.Label;
 import feathers.controls.LayoutGroup;
     import feathers.controls.TextCallout;
 import feathers.controls.TextInput;
+import feathers.layout.AnchorLayout;
 import feathers.layout.HorizontalLayout;
 import feathers.layout.VerticalLayout;
 import feathers.themes.MetalWorksMobileTheme;
@@ -13,52 +18,55 @@ import starling.display.Sprite;
 import starling.events.Event;
 import starling.text.TextField;
 
-    public class Main extends Sprite {
+    public class Main extends LayoutGroup {
 
         //ECRANS
-        //private var _welcomeScreen
+        /** Ecran de connexion **/
+        private var _loginScreen:LoginScreen;
+        /** Ecran courant */
+        private var _currentScreen:Screen;
 
+        //CONTROLEURS
+        private var _loginController:LoginController;
 
-        private var _username:TextInput;
-        private var _password:TextInput;
-        //Boutton de connexion
-        private var _btnConnect:Button;
-
+        //THEME
+        private var _theme:MetalWorksMobileTheme;
 
         public function Main() {
+            super();
 
-            new MetalWorksMobileTheme();
+            _theme = new MetalWorksMobileTheme();
 
-            var group:LayoutGroup = new LayoutGroup();
-            this.addChild( group );
-            var layout:VerticalLayout = new VerticalLayout();
-            layout.gap = 10;
-            group.layout = layout;
+            _loginController = new LoginController();
 
-            var usernameLabel:Label = new Label();
-            usernameLabel.text = "Nom d'utilisateur";
-            _username = new TextInput();
-            _username.width = 200;
-            group.addChild(usernameLabel);
-            group.addChild(_username);
+            _currentScreen = null;
 
-            var passwrodLabel:Label = new Label();
-            passwrodLabel.text = "Mot de passe";
-            _password = new TextInput();
-            _password.width = 200;
-            _password.displayAsPassword = true;
-            group.addChild(passwrodLabel);
-            group.addChild(_password);
-
-            _btnConnect = new Button();
-            _btnConnect.label = "Se connecter";
-            //_btnConnect.addEventListener(Event.TRIGGERED, seConnecter(_username.text,_password.text));
-            _btnConnect.addEventListener(Event.TRIGGERED, seConnecter);
-            group.addChild(_btnConnect);
+            this.addEventListener(starling.events.Event.ADDED_TO_STAGE, addedToStageHandler);
         }
 
-        private function seConnecter(event:Event){
-            trace(_username.text);
+        private function addedToStageHandler(event:starling.events.Event):void {
+            // Supporte les ancres
+            this.layout = new AnchorLayout();
+
+            showLoginScreen();
+
+            // Ecoute les évenements de changements d'écrans
+            /*addEventListener(NavigationEvent.CHANGE_SCREEN, onChangeScreen);
+            addEventListener(NavigationEvent.DECONNECTION, onDeconnection);
+            addEventListener(starling.events.Event.FATAL_ERROR, onErrorOccured);
+            */
         }
+
+        /**
+         * Affiche l'écran de login
+         */
+        private function showLoginScreen():void {
+            _loginScreen = new LoginScreen(_loginController);
+            this.addChild(_loginScreen);
+            _currentScreen = _loginScreen;
+
+            //_loginScreen.addEventListener(NavigationEvent.CONNECTION, onConnection);
+        }
+
     }
 }

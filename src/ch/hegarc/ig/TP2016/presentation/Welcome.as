@@ -12,16 +12,11 @@ package ch.hegarc.ig.TP2016.presentation {
 
     public class Welcome extends Sprite{
 
-        private var _btnConnect:Button;
-
         public function Welcome() {
 
-            var textfield:TextField = new TextField(400,200, "Welcome §111111111!");
+            var textfield:TextField = new TextField(400,200, "Welcome !");
             addChild(textfield);
 
-            _btnConnect = new Button();
-            _btnConnect.label = "Se connecter";
-            addChild(_btnConnect);
         }
 
     }
