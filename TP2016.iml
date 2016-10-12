@@ -2,7 +2,7 @@
 <module type="Flex" version="4">
   <component name="FlexBuildConfigurationManager" active="TP2016">
     <configurations>
-      <configuration name="TP2016" target-platform="Mobile" pure-as="true" main-class="ch.hegarc.ig.TP2016.app.Main" output-file="Main.swf" output-folder="$MODULE_DIR$/out/production/TP2016">
+      <configuration name="TP2016" target-platform="Mobile" pure-as="true" main-class="ch.hegarc.ig.TP2016.presentation.Main" output-file="Main.swf" output-folder="$MODULE_DIR$/out/production/TP2016">
         <dependencies target-player="23.0">
           <entries>
             <entry library-name="feathers" library-level="project">

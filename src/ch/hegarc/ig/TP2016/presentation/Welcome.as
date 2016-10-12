@@ -16,7 +16,7 @@ package ch.hegarc.ig.TP2016.presentation {
 
         public function Welcome() {
 
-            var textfield:TextField = new TextField(400,200, "Welcome !");
+            var textfield:TextField = new TextField(400,200, "Welcome §111111111!");
             addChild(textfield);
 
             _btnConnect = new Button();
