@@ -42,7 +42,7 @@ package ch.hegarc.ig.TP2016.presentation.screens {
 
         override protected function initialize():void {
             // Positionne l'écran
-            this.layoutData = new AnchorLayoutData(0, 0, 0, 200);
+            this.layoutData = new AnchorLayoutData(0, 0, 0, 0);
 
             this.width = stage.stageHeight - 200;
             this.height = stage.stageHeight;
