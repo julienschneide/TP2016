@@ -5,7 +5,12 @@ package ch.hegarc.ig.TP2016.presentation.controllers {
 
 import ch.hegarc.ig.TP2016.business.User;
 
-    public class LoginController {
+import flash.net.URLRequest;
+import flash.net.URLRequestMethod;
+import flash.net.URLVariables;
+import flash.net.navigateToURL;
+
+public class LoginController {
 
         /** Utilisateur connecté */
         private var _user:User;
@@ -14,6 +19,20 @@ import ch.hegarc.ig.TP2016.business.User;
         }
 
         public function authentification(username:String, password:String):void{
+
+            //Create the HTTP request object
+            var request = new URLRequest("http://localhost:8080/authLDAP")
+            request.method = URLRequestMethod.GET;
+
+            var variableUser = new URLVariables();
+            variableUser.decode("username=" + username + "&password=" + password);
+
+            request.data = variableUser;
+
+            navigateToURL(request);
+
+
+
             trace(username + " " + password);
         }
     }

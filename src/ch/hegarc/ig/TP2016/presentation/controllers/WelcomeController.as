@@ -8,7 +8,5 @@ package ch.hegarc.ig.TP2016.presentation.controllers {
         public function WelcomeController() {
         }
 
-
-
     }
 }
