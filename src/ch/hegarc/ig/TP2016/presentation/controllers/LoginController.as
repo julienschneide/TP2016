@@ -10,7 +10,9 @@ import flash.net.URLRequestMethod;
 import flash.net.URLVariables;
 import flash.net.navigateToURL;
 
-public class LoginController {
+import starling.events.EventDispatcher;
+
+public class LoginController extends EventDispatcher{
 
         /** Utilisateur connecté */
         private var _user:User;

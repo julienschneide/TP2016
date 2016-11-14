@@ -111,7 +111,6 @@ import starling.text.TextField;
         private function onChangeScreen(event:NavigationEvent):void {
 
             switch (event.params.id) {
-
                     // Affichage de l'écran "Login"
                 case LoginScreen.NAVKEY:
                     _loginScreen = new LoginScreen(_loginController); // TODO Normaliser comme l'autre écran ou non ?
