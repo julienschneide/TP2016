@@ -81,8 +81,6 @@ import starling.text.TextField;
             _loginScreen = new LoginScreen(_loginController);
             this.addChild(_loginScreen);
             _currentScreen = _loginScreen;
-
-            //_loginScreen.addEventListener(NavigationEvent.CONNECTION, onConnection);
         }
 
     }

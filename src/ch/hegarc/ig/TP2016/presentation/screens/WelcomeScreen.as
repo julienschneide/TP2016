@@ -6,6 +6,7 @@ package ch.hegarc.ig.TP2016.presentation.screens {
 import ch.hegarc.ig.TP2016.presentation.controllers.WelcomeController;
 
 import feathers.controls.Button;
+import feathers.controls.Header;
 import feathers.controls.Label;
 import feathers.controls.TextCallout;
     import feathers.themes.MetalWorksMobileTheme;
