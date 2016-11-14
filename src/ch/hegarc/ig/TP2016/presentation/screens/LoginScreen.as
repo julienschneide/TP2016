@@ -26,6 +26,8 @@ package ch.hegarc.ig.TP2016.presentation.screens {
         private var _btnConnect:Button;
         /** Contrôleur de la vue, raccourci pour ne pas caster à chaque utilisation */
         private var _controller:LoginController;
+        /** Clé de navigation pour cet écran */
+        public static const NAVKEY:String="login";
 
         public function LoginScreen(controller:LoginController) {
             super(ViewType.DETAIL, controller);

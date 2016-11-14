@@ -20,7 +20,7 @@ import starling.core.Starling;
             if(this.stage)
             {
                 this.stage.scaleMode = StageScaleMode.NO_SCALE;
-                this.stage.align = StageAlign.TOP_RIGHT;
+                this.stage.align = StageAlign.TOP_LEFT;
             }
 
             this.mouseEnabled = this.mouseChildren = false;
