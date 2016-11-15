@@ -115,7 +115,11 @@ import starling.text.TextField;
                 case LoginScreen.NAVKEY:
                     _loginScreen = new LoginScreen(_loginController); // TODO Normaliser comme l'autre écran ou non ?
                     swapScreen(_loginScreen, true);
-                    break;
+                break;
+                case WelcomeScreen.NAVKEY:
+                    _welcomeScreen = new WelcomeScreen(_welcomeControler);
+                    swapScreen(_welcomeScreen, true);
+                break;
             }
         }
 

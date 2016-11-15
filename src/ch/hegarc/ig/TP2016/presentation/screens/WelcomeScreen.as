@@ -4,6 +4,7 @@
 package ch.hegarc.ig.TP2016.presentation.screens {
 
 import ch.hegarc.ig.TP2016.presentation.controllers.WelcomeController;
+import ch.hegarc.ig.TP2016.presentation.events.NavigationEvent;
 
 import feathers.controls.Button;
 import feathers.controls.Header;
@@ -23,6 +24,9 @@ import starling.text.TextField;
         //Boutton de navigation vers Login Screen
         private var _btnNavLogin:Button;
 
+        /** Clé de navigation pour cet écran */
+        public static const NAVKEY:String="welcome";
+
         public function WelcomeScreen(controller:WelcomeController) {
             super(ViewType.DETAIL, controller);
             _controller = controller as WelcomeController;
@@ -30,6 +34,7 @@ import starling.text.TextField;
 
         override protected function initialize():void{
             super.initialize();
+            super.title = "Welcome";
 
             _welcomeLabel = new Label();
             _welcomeLabel.text = "Bienvenue dans l'application TP2016";
@@ -43,7 +48,8 @@ import starling.text.TextField;
 
         private function goToLoginScreen(event:Event)
         {
-            //_controller....
+            var navEvent:NavigationEvent = new NavigationEvent(NavigationEvent.CHANGE_SCREEN, {id: LoginScreen.NAVKEY}, true);
+            dispatchEvent(navEvent);
         }
     }
 }

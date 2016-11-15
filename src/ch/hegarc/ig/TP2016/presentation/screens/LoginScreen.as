@@ -4,9 +4,11 @@
 package ch.hegarc.ig.TP2016.presentation.screens {
 
     import ch.hegarc.ig.TP2016.presentation.controllers.LoginController;
-    import ch.hegarc.ig.TP2016.presentation.screens.Screen;
+import ch.hegarc.ig.TP2016.presentation.events.NavigationEvent;
+import ch.hegarc.ig.TP2016.presentation.screens.Screen;
+import ch.hegarc.ig.TP2016.presentation.screens.WelcomeScreen;
 
-    import feathers.controls.Button;
+import feathers.controls.Button;
     import feathers.controls.Label;
     import feathers.controls.LayoutGroup;
     import feathers.layout.VerticalLayout;
@@ -24,8 +26,11 @@ package ch.hegarc.ig.TP2016.presentation.screens {
         private var _password:TextInput;
         //Boutton de connexion
         private var _btnConnect:Button;
+        private var _btnWelcome:Button;
+
         /** Contrôleur de la vue, raccourci pour ne pas caster à chaque utilisation */
         private var _controller:LoginController;
+
         /** Clé de navigation pour cet écran */
         public static const NAVKEY:String="login";
 
@@ -63,11 +68,21 @@ package ch.hegarc.ig.TP2016.presentation.screens {
             //_btnConnect.addEventListener(Event.TRIGGERED, seConnecter(_username.text,_password.text));
             _btnConnect.addEventListener(Event.TRIGGERED, connectionTriggered);
             group.addChild(_btnConnect);
+
+            _btnWelcome = new Button();
+            _btnWelcome.label = "Retour à l'accueil";
+            _btnWelcome.addEventListener(Event.TRIGGERED, goToWelcome);
+            group.addChild(_btnWelcome);
         }
 
         private function connectionTriggered(event:Event){
             //Appel de la méthode d'authentification du controlleur
             _controller.authentification(_username.text, _password.text);
+        }
+
+        private function goToWelcome(event:Event){
+            var navEvent:NavigationEvent = new NavigationEvent(NavigationEvent.CHANGE_SCREEN, {id: WelcomeScreen.NAVKEY}, true);
+            dispatchEvent(navEvent);
         }
     }
 }
