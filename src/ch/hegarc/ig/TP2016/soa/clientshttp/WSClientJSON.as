@@ -68,7 +68,7 @@ import flash.net.URLRequestMethod;
 			
 			_requestLoader.addEventListener( HTTPStatusEvent.HTTP_RESPONSE_STATUS, onHttpResponseStatus);
 			_requestLoader.addEventListener( HTTPStatusEvent.HTTP_STATUS, onStatus);
-			_requestLoader.addEventListener( Event.COMPLETE, httpRequestComplete); 
+			_requestLoader.addEventListener( Event.COMPLETE, httpRequestComplete);
 			_requestLoader.addEventListener( IOErrorEvent.IO_ERROR, httpRequestIOError );
 			_requestLoader.addEventListener( SecurityErrorEvent.SECURITY_ERROR, httpRequestSecurityError );
 			
@@ -76,21 +76,21 @@ import flash.net.URLRequestMethod;
 		}
 		
 		private function onHttpResponseStatus(e:HTTPStatusEvent):void{
-			// trace("WSClientJSON.onHttpResponseStatus : " + e.status + " " + e.type + " " + e.responseURL);
+			 trace("WSClientJSON.onHttpResponseStatus : " + e.status + " " + e.type + " " + e.responseURL);
 			_statusCode = e.status;
 		}
 		
 		private function onStatus(e:HTTPStatusEvent):void{
-			// trace("WSClientJSON.onStatus : " + e.status + " " + e.type + " " + e.responseURL);
+			trace("WSClientJSON.onStatus : " + e.status + " " + e.type + " " + e.responseURL);
 		}
 		
 		public function httpRequestComplete( event:Event ):void {
 			try{
 				if(_statusCode == 200){
 					trace("WSClientJSON Loaded data : " + event.target.data.toString());
-					var jsonResult:Object = JSON.parse(event.target.data);
+					//var jsonResult:Object = JSON.parse(event.target.data);
 					
-					_successHandler(jsonResult);
+					//_successHandler(jsonResult);
 				}else{
 					// ServicesLogs.onExceptionDetails("WSClientJSON", "Status code error", "Status code : " + _statusCode, null);
 					trace("WSClientJSON", "Status code error", "Status code : " + _statusCode, null);

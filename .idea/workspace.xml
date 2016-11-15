@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="21a5cb4b-f94a-4901-aa5c-3d77ab94ddc1" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ch/hegarc/ig/TP2016/presentation/Main.as" afterPath="$PROJECT_DIR$/src/ch/hegarc/ig/TP2016/presentation/Main.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ch/hegarc/ig/TP2016/presentation/screens/LoginScreen.as" afterPath="$PROJECT_DIR$/src/ch/hegarc/ig/TP2016/presentation/screens/LoginScreen.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ch/hegarc/ig/TP2016/presentation/screens/WelcomeScreen.as" afterPath="$PROJECT_DIR$/src/ch/hegarc/ig/TP2016/presentation/screens/WelcomeScreen.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/TP2016/TP2016app.swf" afterPath="$PROJECT_DIR$/out/production/TP2016/TP2016app.swf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ch/hegarc/ig/TP2016/soa/clientshttp/WSClientJSON.as" afterPath="$PROJECT_DIR$/src/ch/hegarc/ig/TP2016/soa/clientshttp/WSClientJSON.as" />
     </list>
     <ignored path="TP2016.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -26,7 +26,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Main.as" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Main.as" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ch/hegarc/ig/TP2016/presentation/Main.as">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="272">
@@ -36,6 +36,16 @@
                 <marker date="1479236403415" expanded="true" signature="51:153" ph="..." />
                 <marker date="1479236403415" expanded="true" signature="3004:3014" ph="{...}" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="WSClientJSON.as" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/ch/hegarc/ig/TP2016/soa/clientshttp/WSClientJSON.as">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="510">
+              <caret line="106" column="10" selection-start-line="106" selection-start-column="10" selection-end-line="106" selection-end-column="10" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -65,7 +75,7 @@
       <file leaf-file-name="TP2016Services.as" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ch/hegarc/ig/TP2016/services/TP2016Services.as">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="359">
+            <state relative-caret-position="291">
               <caret line="38" column="18" selection-start-line="38" selection-start-column="18" selection-end-line="38" selection-end-column="18" />
               <folding>
                 <element signature="e#92#138#0" expanded="true" />
@@ -162,7 +172,6 @@
         <option value="$PROJECT_DIR$/src/ch/hegarc/ig/TP2016/error/ServiceError.as" />
         <option value="$PROJECT_DIR$/src/ch/hegarc/ig/TP2016/json/JsonMediator.as" />
         <option value="$PROJECT_DIR$/src/ch/hegarc/ig/TP2016/utilities/Constantes.as" />
-        <option value="$PROJECT_DIR$/src/ch/hegarc/ig/TP2016/soa/clientshttp/WSClientJSON.as" />
         <option value="$PROJECT_DIR$/src/ch/hegarc/ig/TP2016/soa/clientshttp/HTTPMediator.as" />
         <option value="$PROJECT_DIR$/src/ch/hegarc/ig/TP2016/soa/clientshttp/HttpMediator.as" />
         <option value="$PROJECT_DIR$/src/ch/hegarc/ig/TP2016/presentation/events/NavigationEvent.as" />
@@ -174,6 +183,7 @@
         <option value="$PROJECT_DIR$/src/ch/hegarc/ig/TP2016/presentation/screens/WelcomeScreen.as" />
         <option value="$PROJECT_DIR$/src/ch/hegarc/ig/TP2016/presentation/screens/LoginScreen.as" />
         <option value="$PROJECT_DIR$/src/ch/hegarc/ig/TP2016/presentation/Main.as" />
+        <option value="$PROJECT_DIR$/src/ch/hegarc/ig/TP2016/soa/clientshttp/WSClientJSON.as" />
       </list>
     </option>
   </component>
@@ -306,6 +316,10 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="soa" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="clientshttp" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -971,12 +985,12 @@
       <workItem from="1477413025105" duration="84000" />
       <workItem from="1477413143194" duration="3609000" />
       <workItem from="1477492588050" duration="778000" />
-      <workItem from="1479153117065" duration="6031000" />
+      <workItem from="1479153117065" duration="6537000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27075000" />
+    <option name="totallyTimeSpent" value="27581000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-274" y="-1088" width="1936" height="1056" extended-state="6" />
@@ -989,7 +1003,7 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.50807637" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22826087" sideWeight="0.49192363" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22826087" sideWeight="0.49192363" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1395,26 +1409,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ch/hegarc/ig/TP2016/services/TP2016Services.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="359">
-          <caret line="38" column="18" selection-start-line="38" selection-start-column="18" selection-end-line="38" selection-end-column="18" />
-          <folding>
-            <element signature="e#92#138#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ch/hegarc/ig/TP2016/soa/clientshttp/WSClientJSON.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1122">
-          <caret line="74" column="44" selection-start-line="74" selection-start-column="44" selection-end-line="74" selection-end-column="44" />
-          <folding>
-            <element signature="e#174#222#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/ch/hegarc/ig/TP2016/utilities/Constantes.as">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
@@ -1429,16 +1423,6 @@
           <caret line="46" column="18" selection-start-line="46" selection-start-column="18" selection-end-line="46" selection-end-column="18" />
           <folding>
             <element signature="e#100#131#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ch/hegarc/ig/TP2016/presentation/controllers/LoginController.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="32" column="45" selection-start-line="32" selection-start-column="45" selection-end-line="32" selection-end-column="45" />
-          <folding>
-            <element signature="e#100#141#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1488,6 +1472,34 @@
             <marker date="1479236403415" expanded="true" signature="51:153" ph="..." />
             <marker date="1479236403415" expanded="true" signature="3004:3014" ph="{...}" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ch/hegarc/ig/TP2016/presentation/controllers/LoginController.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="32" column="45" selection-start-line="32" selection-start-column="45" selection-end-line="32" selection-end-column="45" />
+          <folding>
+            <element signature="e#100#141#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ch/hegarc/ig/TP2016/services/TP2016Services.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="291">
+          <caret line="38" column="18" selection-start-line="38" selection-start-column="18" selection-end-line="38" selection-end-column="18" />
+          <folding>
+            <element signature="e#92#138#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ch/hegarc/ig/TP2016/soa/clientshttp/WSClientJSON.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="106" column="10" selection-start-line="106" selection-start-column="10" selection-end-line="106" selection-end-column="10" />
+          <folding />
         </state>
       </provider>
     </entry>
