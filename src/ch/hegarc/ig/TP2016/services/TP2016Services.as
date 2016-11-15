@@ -2,6 +2,12 @@
  * Created by julien.schneide on 14.11.2016.
  */
 package ch.hegarc.ig.TP2016.services {
+import ch.hegarc.ig.TP2016.error.ServiceError;
+import ch.hegarc.ig.TP2016.soa.clientshttp.WSClientJSON;
+import ch.hegarc.ig.TP2016.utilities.Constantes;
+
+import flash.utils.Dictionary;
+
 import starling.events.EventDispatcher;
 
 public class TP2016Services extends EventDispatcher{
@@ -18,6 +24,32 @@ public class TP2016Services extends EventDispatcher{
         }
 
         return _instance;
+    }
+
+    /**
+     * Service permettant d'authentifier une personne
+     * @param username Nom d'utilisateur saisi
+     * @param password Mot de passe saisi
+     */
+    public function authentificate(username:String, password:String):void{
+        var url:String = Constantes.LOGIN_URL;
+        var params:Dictionary = new Dictionary();
+        params["username"] = username;
+        params["password"] = password;
+        new WSClientJSON(url, params, authentificationCompleted, webServiceError);
+    }
+
+    private  function authentificationCompleted(json:Object):void{
+        trace ("user autehntifié");
+    }
+
+    /**
+     * Récupère l'erreur rencontrée et la répend
+     * @param errorId
+     */
+    private function webServiceError(errorId:int):void{
+        var error:ServiceError = new ServiceError(errorId, "Une erreur a été rencontrée...");
+        dispatchEventWith(starling.events.Event.FATAL_ERROR, false, error);
     }
 }
 }

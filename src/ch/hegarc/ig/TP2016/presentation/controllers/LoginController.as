@@ -4,6 +4,7 @@
 package ch.hegarc.ig.TP2016.presentation.controllers {
 
 import ch.hegarc.ig.TP2016.business.User;
+import ch.hegarc.ig.TP2016.services.TP2016Services;
 
 import flash.net.URLRequest;
 import flash.net.URLRequestMethod;
@@ -12,7 +13,7 @@ import flash.net.navigateToURL;
 
 import starling.events.EventDispatcher;
 
-public class LoginController extends EventDispatcher{
+    public class LoginController extends EventDispatcher{
 
         /** Utilisateur connecté */
         private var _user:User;
@@ -20,21 +21,15 @@ public class LoginController extends EventDispatcher{
         public function LoginController() {
         }
 
+        /**
+         * Authentifie l'utilisateur en appelant le web service d'authentification
+         * @param username Nom d'utilisateur saisi
+         * @param password Mot de passe saisi
+         */
         public function authentification(username:String, password:String):void{
 
-            //Create the HTTP request object
-            var request = new URLRequest("http://localhost:8080/authLDAP")
-            request.method = URLRequestMethod.GET;
-
-            var variableUser = new URLVariables();
-            variableUser.decode("username=" + username + "&password=" + password);
-
-            request.data = variableUser;
-
-            navigateToURL(request);
-
-
-
+            //TP2016Services.getInstance().addEventListener(starling.events.Event.events.Event.COMPLETE, authentification)
+            TP2016Services.getInstance().authentificate(username, password);
             trace(username + " " + password);
         }
     }
