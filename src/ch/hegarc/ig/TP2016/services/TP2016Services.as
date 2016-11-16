@@ -43,6 +43,13 @@ public class TP2016Services extends EventDispatcher{
         trace ("user autehntifié");
     }
 
+    public function toUpper(texte:String):void{
+        var url:String = Constantes.TOUPPER_URL;
+        var params:Dictionary = new Dictionary();
+        params["toUpper"] = texte;
+        new WSClientJSON(url, params, authentificationCompleted, webServiceError);
+    }
+
     /**
      * Récupère l'erreur rencontrée et la répend
      * @param errorId

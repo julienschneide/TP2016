@@ -9,8 +9,11 @@ import ch.hegarc.ig.TP2016.presentation.events.NavigationEvent;
 import feathers.controls.Button;
 import feathers.controls.Header;
 import feathers.controls.Label;
+import feathers.controls.LayoutGroup;
 import feathers.controls.TextCallout;
-    import feathers.themes.MetalWorksMobileTheme;
+import feathers.controls.TextInput;
+import feathers.layout.VerticalLayout;
+import feathers.themes.MetalWorksMobileTheme;
 
     import starling.display.Sprite;
 import starling.events.Event;
@@ -23,6 +26,10 @@ import starling.text.TextField;
         private var _controller:WelcomeController;
         //Boutton de navigation vers Login Screen
         private var _btnNavLogin:Button;
+        //Boutton fonction upper
+        private var _tiToUpper:TextInput;
+        private var _btnUpper:Button;
+        private var _UpperLabel:Label;
 
         /** Clé de navigation pour cet écran */
         public static const NAVKEY:String="welcome";
@@ -36,20 +43,43 @@ import starling.text.TextField;
             super.initialize();
             super.title = "Welcome";
 
+            var group:LayoutGroup = new LayoutGroup();
+            this.addChild( group );
+            var layout:VerticalLayout = new VerticalLayout();
+            layout.gap = 10;
+            group.layout = layout;
+
             _welcomeLabel = new Label();
             _welcomeLabel.text = "Bienvenue dans l'application TP2016";
-            addChild(_welcomeLabel);
+            group.addChild(_welcomeLabel);
 
             _btnNavLogin = new Button();
             _btnNavLogin.label = "Vers la page de Login";
             _btnNavLogin.addEventListener(Event.TRIGGERED, goToLoginScreen);
-            addChild(_btnNavLogin);
+            group.addChild(_btnNavLogin);
+
+            _tiToUpper = new TextInput();
+            _tiToUpper.text = "miniscule";
+            _UpperLabel = new Label();
+            _btnUpper = new Button();
+            _btnUpper.label = "To UpperCase";
+            _btnUpper.addEventListener(Event.TRIGGERED, toUpper);
+            group.addChild(_tiToUpper);
+            group.addChild(_UpperLabel);
+            group.addChild(_btnUpper);
         }
 
-        private function goToLoginScreen(event:Event)
+        private function goToLoginScreen(event:Event):void
         {
             var navEvent:NavigationEvent = new NavigationEvent(NavigationEvent.CHANGE_SCREEN, {id: LoginScreen.NAVKEY}, true);
             dispatchEvent(navEvent);
+        }
+
+        private function toUpper(event:Event):void{
+            var uppered:String;
+            uppered = _controller.toUpper(_tiToUpper.text);
+            trace (uppered);
+            _UpperLabel.text = uppered
         }
     }
 }

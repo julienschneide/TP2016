@@ -4,6 +4,11 @@
     <list default="true" id="21a5cb4b-f94a-4901-aa5c-3d77ab94ddc1" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/TP2016/TP2016app.swf" afterPath="$PROJECT_DIR$/out/production/TP2016/TP2016app.swf" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ch/hegarc/ig/TP2016/presentation/TP2016app.as" afterPath="$PROJECT_DIR$/src/ch/hegarc/ig/TP2016/presentation/TP2016app.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ch/hegarc/ig/TP2016/presentation/controllers/WelcomeController.as" afterPath="$PROJECT_DIR$/src/ch/hegarc/ig/TP2016/presentation/controllers/WelcomeController.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ch/hegarc/ig/TP2016/presentation/screens/LoginScreen.as" afterPath="$PROJECT_DIR$/src/ch/hegarc/ig/TP2016/presentation/screens/LoginScreen.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ch/hegarc/ig/TP2016/presentation/screens/WelcomeScreen.as" afterPath="$PROJECT_DIR$/src/ch/hegarc/ig/TP2016/presentation/screens/WelcomeScreen.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ch/hegarc/ig/TP2016/services/TP2016Services.as" afterPath="$PROJECT_DIR$/src/ch/hegarc/ig/TP2016/services/TP2016Services.as" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ch/hegarc/ig/TP2016/soa/clientshttp/WSClientJSON.as" afterPath="$PROJECT_DIR$/src/ch/hegarc/ig/TP2016/soa/clientshttp/WSClientJSON.as" />
     </list>
     <ignored path="TP2016.iws" />
@@ -40,34 +45,34 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="WSClientJSON.as" pinned="false" current-in-tab="true">
+      <file leaf-file-name="TP2016app.as" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ch/hegarc/ig/TP2016/presentation/TP2016app.as">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="450">
+              <caret line="30" column="37" selection-start-line="30" selection-start-column="37" selection-end-line="30" selection-end-column="37" />
+              <folding>
+                <element signature="e#88#116#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="WSClientJSON.as" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ch/hegarc/ig/TP2016/soa/clientshttp/WSClientJSON.as">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="106" column="10" selection-start-line="106" selection-start-column="10" selection-end-line="106" selection-end-column="10" />
+            <state relative-caret-position="476">
+              <caret line="92" column="21" selection-start-line="92" selection-start-column="21" selection-end-line="92" selection-end-column="21" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SharedObjectManager.as" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ch/hegarc/ig/TP2016/soa/managers/SharedObjectManager.as">
+      <file leaf-file-name="Constantes.as" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ch/hegarc/ig/TP2016/utilities/Constantes.as">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="15" column="15" selection-start-line="15" selection-start-column="15" selection-end-line="15" selection-end-column="15" />
+            <state relative-caret-position="306">
+              <caret line="20" column="91" selection-start-line="20" selection-start-column="91" selection-end-line="20" selection-end-column="91" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Screen.as" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ch/hegarc/ig/TP2016/presentation/screens/Screen.as">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="36">
-              <caret line="46" column="18" selection-start-line="46" selection-start-column="18" selection-end-line="46" selection-end-column="18" />
-              <folding>
-                <element signature="e#100#131#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -75,8 +80,8 @@
       <file leaf-file-name="TP2016Services.as" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ch/hegarc/ig/TP2016/services/TP2016Services.as">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="291">
-              <caret line="38" column="18" selection-start-line="38" selection-start-column="18" selection-end-line="38" selection-end-column="18" />
+            <state relative-caret-position="410">
+              <caret line="51" column="0" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
               <folding>
                 <element signature="e#92#138#0" expanded="true" />
               </folding>
@@ -94,35 +99,25 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="WelcomeScreen.as" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ch/hegarc/ig/TP2016/presentation/screens/WelcomeScreen.as">
+      <file leaf-file-name="WelcomeController.as" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/ch/hegarc/ig/TP2016/presentation/controllers/WelcomeController.as">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="52" column="9" selection-start-line="52" selection-start-column="9" selection-end-line="52" selection-end-column="9" />
+            <state relative-caret-position="328">
+              <caret line="64" column="32" selection-start-line="64" selection-start-column="32" selection-end-line="64" selection-end-column="32" />
               <folding>
-                <element signature="e#96#166#0" expanded="true" />
+                <element signature="e#99#150#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="NavigationEvent.as" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ch/hegarc/ig/TP2016/presentation/events/NavigationEvent.as">
+      <file leaf-file-name="WelcomeScreen.as" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ch/hegarc/ig/TP2016/presentation/screens/WelcomeScreen.as">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="27" column="66" selection-start-line="27" selection-start-column="66" selection-end-line="27" selection-end-column="66" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LoginController.as" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ch/hegarc/ig/TP2016/presentation/controllers/LoginController.as">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="32" column="45" selection-start-line="32" selection-start-column="45" selection-end-line="32" selection-end-column="45" />
+            <state relative-caret-position="483">
+              <caret line="78" column="31" selection-start-line="78" selection-start-column="31" selection-end-line="78" selection-end-column="31" />
               <folding>
-                <element signature="e#100#141#0" expanded="true" />
+                <element signature="e#96#166#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -131,8 +126,8 @@
       <file leaf-file-name="LoginScreen.as" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ch/hegarc/ig/TP2016/presentation/screens/LoginScreen.as">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="523">
-              <caret line="83" column="112" selection-start-line="83" selection-start-column="99" selection-end-line="83" selection-end-column="112" />
+            <state relative-caret-position="459">
+              <caret line="44" column="0" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
               <folding>
                 <element signature="e#100#168#0" expanded="true" />
               </folding>
@@ -168,22 +163,22 @@
         <option value="$PROJECT_DIR$/src/ch/hegarc/ig/TP2016/presentation/screens/ViewType.as" />
         <option value="$PROJECT_DIR$/src/ch/hegarc/ig/TP2016/presentation/screens/Screen.as" />
         <option value="$PROJECT_DIR$/src/ch/hegarc/ig/TP2016/error/ServiceError.java" />
-        <option value="$PROJECT_DIR$/src/ch/hegarc/ig/TP2016/presentation/controllers/WelcomeController.as" />
         <option value="$PROJECT_DIR$/src/ch/hegarc/ig/TP2016/error/ServiceError.as" />
         <option value="$PROJECT_DIR$/src/ch/hegarc/ig/TP2016/json/JsonMediator.as" />
         <option value="$PROJECT_DIR$/src/ch/hegarc/ig/TP2016/utilities/Constantes.as" />
         <option value="$PROJECT_DIR$/src/ch/hegarc/ig/TP2016/soa/clientshttp/HTTPMediator.as" />
         <option value="$PROJECT_DIR$/src/ch/hegarc/ig/TP2016/soa/clientshttp/HttpMediator.as" />
         <option value="$PROJECT_DIR$/src/ch/hegarc/ig/TP2016/presentation/events/NavigationEvent.as" />
-        <option value="$PROJECT_DIR$/src/ch/hegarc/ig/TP2016/presentation/TP2016app.as" />
         <option value="$PROJECT_DIR$/src/ch/hegarc/ig/TP2016/presentation/menu/MainMenu.as" />
         <option value="$PROJECT_DIR$/src/ch/hegarc/ig/TP2016/soa/managers/SharedObjectManager.as" />
-        <option value="$PROJECT_DIR$/src/ch/hegarc/ig/TP2016/services/TP2016Services.as" />
         <option value="$PROJECT_DIR$/src/ch/hegarc/ig/TP2016/presentation/controllers/LoginController.as" />
-        <option value="$PROJECT_DIR$/src/ch/hegarc/ig/TP2016/presentation/screens/WelcomeScreen.as" />
-        <option value="$PROJECT_DIR$/src/ch/hegarc/ig/TP2016/presentation/screens/LoginScreen.as" />
         <option value="$PROJECT_DIR$/src/ch/hegarc/ig/TP2016/presentation/Main.as" />
+        <option value="$PROJECT_DIR$/src/ch/hegarc/ig/TP2016/services/TP2016Services.as" />
+        <option value="$PROJECT_DIR$/src/ch/hegarc/ig/TP2016/presentation/TP2016app.as" />
+        <option value="$PROJECT_DIR$/src/ch/hegarc/ig/TP2016/presentation/screens/LoginScreen.as" />
+        <option value="$PROJECT_DIR$/src/ch/hegarc/ig/TP2016/presentation/screens/WelcomeScreen.as" />
         <option value="$PROJECT_DIR$/src/ch/hegarc/ig/TP2016/soa/clientshttp/WSClientJSON.as" />
+        <option value="$PROJECT_DIR$/src/ch/hegarc/ig/TP2016/presentation/controllers/WelcomeController.as" />
       </list>
     </option>
   </component>
@@ -194,10 +189,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-274" />
-    <option name="y" value="-1088" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1382" />
+    <option name="height" value="744" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -416,6 +411,32 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="events" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TP2016" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TP2016" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TP2016" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="presentation" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -985,16 +1006,16 @@
       <workItem from="1477413025105" duration="84000" />
       <workItem from="1477413143194" duration="3609000" />
       <workItem from="1477492588050" duration="778000" />
-      <workItem from="1479153117065" duration="6537000" />
+      <workItem from="1479153117065" duration="13184000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27581000" />
+    <option name="totallyTimeSpent" value="34228000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-274" y="-1088" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1003,12 +1024,12 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.50807637" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22826087" sideWeight="0.49192363" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.68421054" sideWeight="0.49192363" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12916666" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18155198" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1107,7 +1128,7 @@
         <state relative-caret-position="459">
           <caret line="32" column="48" selection-start-line="32" selection-start-column="48" selection-end-line="32" selection-end-column="48" />
           <folding>
-            <element signature="e#100#131#0" expanded="true" />
+            <element signature="e#100#131#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1174,7 +1195,7 @@
         <state relative-caret-position="476">
           <caret line="33" column="50" selection-start-line="33" selection-start-column="50" selection-end-line="33" selection-end-column="50" />
           <folding>
-            <element signature="e#100#131#0" expanded="true" />
+            <element signature="e#100#131#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1241,7 +1262,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#100#131#0" expanded="true" />
+            <element signature="e#100#131#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1351,14 +1372,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ch/hegarc/ig/TP2016/presentation/controllers/WelcomeController.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="5" column="35" selection-start-line="5" selection-start-column="35" selection-end-line="5" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/ch/hegarc/ig/TP2016/error/ServiceError.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -1383,16 +1396,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ch/hegarc/ig/TP2016/presentation/TP2016app.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-68">
-          <caret line="22" column="55" selection-start-line="22" selection-start-column="55" selection-end-line="22" selection-end-column="55" />
-          <folding>
-            <element signature="e#88#116#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/ch/hegarc/ig/TP2016/soa/managers/SharedObjectManager.as">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -1409,20 +1412,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ch/hegarc/ig/TP2016/utilities/Constantes.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="20" column="91" selection-start-line="20" selection-start-column="91" selection-end-line="20" selection-end-column="91" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/ch/hegarc/ig/TP2016/presentation/screens/Screen.as">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="36">
           <caret line="46" column="18" selection-start-line="46" selection-start-column="18" selection-end-line="46" selection-end-column="18" />
           <folding>
-            <element signature="e#100#131#0" expanded="true" />
+            <element signature="e#100#131#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1431,34 +1426,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="27" column="66" selection-start-line="27" selection-start-column="66" selection-end-line="27" selection-end-column="66" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ch/hegarc/ig/TP2016/presentation/screens/WelcomeScreen.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="52" column="9" selection-start-line="52" selection-start-column="9" selection-end-line="52" selection-end-column="9" />
-          <folding>
-            <element signature="e#96#166#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ch/hegarc/ig/TP2016/presentation/screens/LoginScreen.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="523">
-          <caret line="83" column="112" selection-start-line="83" selection-start-column="99" selection-end-line="83" selection-end-column="112" />
-          <folding>
-            <element signature="e#100#168#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ch/hegarc/ig/TP2016/presentation/menu/MainMenu.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="6" column="41" selection-start-line="6" selection-start-column="41" selection-end-line="6" selection-end-column="41" />
           <folding />
         </state>
       </provider>
@@ -1475,31 +1442,87 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/ch/hegarc/ig/TP2016/presentation/TP2016app.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="30" column="37" selection-start-line="30" selection-start-column="37" selection-end-line="30" selection-end-column="37" />
+          <folding>
+            <element signature="e#88#116#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/ch/hegarc/ig/TP2016/presentation/controllers/LoginController.as">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="32" column="45" selection-start-line="32" selection-start-column="45" selection-end-line="32" selection-end-column="45" />
+        <state relative-caret-position="493">
+          <caret line="31" column="36" selection-start-line="31" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
           <folding>
             <element signature="e#100#141#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/ch/hegarc/ig/TP2016/utilities/Constantes.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="20" column="91" selection-start-line="20" selection-start-column="91" selection-end-line="20" selection-end-column="91" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ch/hegarc/ig/TP2016/soa/clientshttp/WSClientJSON.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="92" column="21" selection-start-line="92" selection-start-column="21" selection-end-line="92" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ch/hegarc/ig/TP2016/presentation/screens/LoginScreen.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="44" column="0" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
+          <folding>
+            <element signature="e#100#168#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/ch/hegarc/ig/TP2016/services/TP2016Services.as">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="291">
-          <caret line="38" column="18" selection-start-line="38" selection-start-column="18" selection-end-line="38" selection-end-column="18" />
+        <state relative-caret-position="410">
+          <caret line="51" column="0" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
           <folding>
             <element signature="e#92#138#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ch/hegarc/ig/TP2016/soa/clientshttp/WSClientJSON.as">
+    <entry file="file://$PROJECT_DIR$/src/ch/hegarc/ig/TP2016/presentation/menu/MainMenu.as">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="106" column="10" selection-start-line="106" selection-start-column="10" selection-end-line="106" selection-end-column="10" />
+        <state relative-caret-position="68">
+          <caret line="6" column="41" selection-start-line="6" selection-start-column="41" selection-end-line="6" selection-end-column="41" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ch/hegarc/ig/TP2016/presentation/screens/WelcomeScreen.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="483">
+          <caret line="78" column="31" selection-start-line="78" selection-start-column="31" selection-end-line="78" selection-end-column="31" />
+          <folding>
+            <element signature="e#96#166#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ch/hegarc/ig/TP2016/presentation/controllers/WelcomeController.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="328">
+          <caret line="64" column="32" selection-start-line="64" selection-start-column="32" selection-end-line="64" selection-end-column="32" />
+          <folding>
+            <element signature="e#99#150#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

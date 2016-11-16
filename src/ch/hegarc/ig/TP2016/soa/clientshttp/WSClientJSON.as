@@ -72,7 +72,7 @@ import flash.net.URLRequestMethod;
 			_requestLoader.addEventListener( IOErrorEvent.IO_ERROR, httpRequestIOError );
 			_requestLoader.addEventListener( SecurityErrorEvent.SECURITY_ERROR, httpRequestSecurityError );
 			
-			_requestLoader.load( _request );
+			_requestLoader.load(_request);
 		}
 		
 		private function onHttpResponseStatus(e:HTTPStatusEvent):void{

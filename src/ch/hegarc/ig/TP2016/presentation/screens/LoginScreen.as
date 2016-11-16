@@ -41,6 +41,7 @@ import feathers.controls.Button;
 
         override protected function initialize():void{
             super.initialize();
+            super.title = "Ecran de login";
 
             var group:LayoutGroup = new LayoutGroup();
             this.addChild( group );
@@ -75,12 +76,12 @@ import feathers.controls.Button;
             group.addChild(_btnWelcome);
         }
 
-        private function connectionTriggered(event:Event){
+        private function connectionTriggered(event:Event):void{
             //Appel de la méthode d'authentification du controlleur
             _controller.authentification(_username.text, _password.text);
         }
 
-        private function goToWelcome(event:Event){
+        private function goToWelcome(event:Event):void{
             var navEvent:NavigationEvent = new NavigationEvent(NavigationEvent.CHANGE_SCREEN, {id: WelcomeScreen.NAVKEY}, true);
             dispatchEvent(navEvent);
         }

@@ -28,7 +28,7 @@ import starling.core.Starling;
             this.loaderInfo.addEventListener(Event.COMPLETE, loaderInfo_completeHandler);
         }
 
-        private function start(){
+        private function start():void{
             this.graphics.clear();
 
             this._starling = new Starling(Main, stage);
