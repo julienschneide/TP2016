@@ -10,7 +10,7 @@ package ch.hegarc.ig.TP2016.business {
         private var _password:String;
         private var _firstname:String;
         private var _lastname:String;
-        private var _token:String;
+        private var _email:String;
 
         public function User() {
         }
@@ -55,12 +55,12 @@ package ch.hegarc.ig.TP2016.business {
             _lastname = value;
         }
 
-        public function get token():String {
-            return _token;
+        public function get email():String {
+            return _email;
         }
 
-        public function set token(value:String):void {
-            _token = value;
+        public function set email(value:String):void {
+            _email = value;
         }
     }
 }
