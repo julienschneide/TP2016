@@ -26,6 +26,7 @@ import feathers.controls.Button;
         private var _password:TextInput;
         //Boutton de connexion
         private var _btnConnect:Button;
+        private var _btnLogout:Button;
         private var _btnWelcome:Button;
 
         /** Contrôleur de la vue, raccourci pour ne pas caster à chaque utilisation */
@@ -70,6 +71,12 @@ import feathers.controls.Button;
             _btnConnect.addEventListener(Event.TRIGGERED, connectionTriggered);
             group.addChild(_btnConnect);
 
+            _btnLogout = new Button();
+            _btnLogout.label = "Logout";
+            //_btnConnect.addEventListener(Event.TRIGGERED, seConnecter(_username.text,_password.text));
+            _btnLogout.addEventListener(Event.TRIGGERED, logoutTriggered);
+            group.addChild(_btnLogout);
+
             _btnWelcome = new Button();
             _btnWelcome.label = "Retour à l'accueil";
             _btnWelcome.addEventListener(Event.TRIGGERED, goToWelcome);
@@ -81,9 +88,14 @@ import feathers.controls.Button;
             _controller.authentification(_username.text, _password.text);
         }
 
+        private function logoutTriggered(event:Event):void{
+            _controller.logout();
+        }
+
         private function goToWelcome(event:Event):void{
             var navEvent:NavigationEvent = new NavigationEvent(NavigationEvent.CHANGE_SCREEN, {id: WelcomeScreen.NAVKEY}, true);
             dispatchEvent(navEvent);
         }
+
     }
 }

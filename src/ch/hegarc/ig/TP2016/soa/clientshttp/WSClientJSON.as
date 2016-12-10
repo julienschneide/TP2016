@@ -63,7 +63,7 @@ import flash.net.URLRequestMethod;
 				
 				_request.data = _urlVariables;
 			}
-			
+
 			_requestLoader = new URLLoader(); 
 			
 			_requestLoader.addEventListener( HTTPStatusEvent.HTTP_RESPONSE_STATUS, onHttpResponseStatus);
@@ -88,9 +88,11 @@ import flash.net.URLRequestMethod;
 			try{
 				if(_statusCode == 200){
 					trace("WSClientJSON Loaded data : " + event.target.data.toString());
-					//var jsonResult:Object = JSON.parse(event.target.data);
-					
-					//_successHandler(jsonResult);
+
+					if(event.target.data != ""){
+						var jsonResult:Object = JSON.parse(event.target.data);
+						_successHandler(jsonResult);
+					}
 				}else{
 					// ServicesLogs.onExceptionDetails("WSClientJSON", "Status code error", "Status code : " + _statusCode, null);
 					trace("WSClientJSON", "Status code error", "Status code : " + _statusCode, null);

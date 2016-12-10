@@ -2,6 +2,7 @@
  * Created by julien.schneide on 14.11.2016.
  */
 package ch.hegarc.ig.TP2016.services {
+import ch.hegarc.ig.TP2016.business.User;
 import ch.hegarc.ig.TP2016.error.ServiceError;
 import ch.hegarc.ig.TP2016.soa.clientshttp.WSClientJSON;
 import ch.hegarc.ig.TP2016.utilities.Constantes;
@@ -39,15 +40,32 @@ public class TP2016Services extends EventDispatcher{
         new WSClientJSON(url, params, authentificationCompleted, webServiceError);
     }
 
-    private  function authentificationCompleted(json:Object):void{
-        trace ("user autehntifié");
+    private function authentificationCompleted(json:Object):void{
+        trace(json.login + json.connectedUser);
+        /*if (json.login = "SUCCESS"){
+            var user:User = new User()
+        }*/
+    }
+
+    public function logout():void{
+        var url:String = Constantes.LOGOUT_URL;
+        var params:Dictionary = new Dictionary();
+        new WSClientJSON(url, params, logoutCompleted, webServiceError);
+    }
+
+    private function logoutCompleted(json:Object):void{
+
     }
 
     public function toUpper(texte:String):void{
         var url:String = Constantes.TOUPPER_URL;
         var params:Dictionary = new Dictionary();
         params["toUpper"] = texte;
-        new WSClientJSON(url, params, authentificationCompleted, webServiceError);
+        new WSClientJSON(url, params, toUpperCompleted, webServiceError);
+    }
+
+    private function toUpperCompleted(json:Object):void{
+
     }
 
     /**

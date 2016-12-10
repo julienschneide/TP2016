@@ -28,9 +28,17 @@ import starling.events.EventDispatcher;
          */
         public function authentification(username:String, password:String):void{
 
-            //TP2016Services.getInstance().addEventListener(starling.events.Event.events.Event.COMPLETE, authentification)
+            TP2016Services.getInstance().addEventListener(starling.events.Event.COMPLETE, authentificationCompleted)
             TP2016Services.getInstance().authentificate(username, password);
-            trace(username + " " + password);
+        }
+
+        private function authentificationCompleted(event:starling.events.Event):void{
+            TP2016Services.getInstance().removeEventListener(starling.events.Event.COMPLETE, authentificationCompleted);
+
+        }
+
+        public function logout():void{
+            TP2016Services.getInstance().logout();
         }
     }
 }
