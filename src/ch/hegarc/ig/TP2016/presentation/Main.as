@@ -1,11 +1,14 @@
 package ch.hegarc.ig.TP2016.presentation {
 
+import ch.hegarc.ig.TP2016.presentation.controllers.DiscussionsListController;
 import ch.hegarc.ig.TP2016.presentation.controllers.LoginController;
 import ch.hegarc.ig.TP2016.presentation.controllers.WelcomeController;
 import ch.hegarc.ig.TP2016.presentation.events.NavigationEvent;
 import ch.hegarc.ig.TP2016.presentation.menu.MainMenu;
+import ch.hegarc.ig.TP2016.presentation.screens.DiscussionsListScreen;
 import ch.hegarc.ig.TP2016.presentation.screens.LoginScreen;
 import ch.hegarc.ig.TP2016.presentation.screens.Screen;
+import ch.hegarc.ig.TP2016.presentation.screens.SpringScreen;
 import ch.hegarc.ig.TP2016.presentation.screens.ViewType;
 import ch.hegarc.ig.TP2016.presentation.screens.WelcomeScreen;
 
@@ -30,6 +33,10 @@ import starling.text.TextField;
         private var _welcomeScreen:WelcomeScreen;
         /** Ecran de connexion **/
         private var _loginScreen:LoginScreen;
+        /** Ecran des services Spring **/
+        private var _springScreen:SpringScreen;
+        /** Ecran de listing des discussions Vanilla **/
+        private var _DiscussionsListScreen:DiscussionsListScreen;
         /** Ecran courant */
         private var _currentScreen:Screen;
         /** Menu Principal */
@@ -40,6 +47,9 @@ import starling.text.TextField;
         private var _loginController:LoginController;
         /** Contrôleur de la vue d'accueil */
         private var _welcomeControler:WelcomeController;
+        /** Contrôleur de la vue de listing discussions Vanilla */
+        private var _discussionsListControler:DiscussionsListController;
+
 
         //THEME
         private var _theme:MetalWorksMobileTheme;
@@ -52,6 +62,7 @@ import starling.text.TextField;
 
             _loginController = new LoginController();
             _welcomeControler = new WelcomeController();
+            _discussionsListControler = new DiscussionsListController();
 
             _currentScreen = null;
 
@@ -113,7 +124,7 @@ import starling.text.TextField;
             switch (event.params.id) {
                     // Affichage de l'écran "Login"
                 case LoginScreen.NAVKEY:
-                    _loginScreen = new LoginScreen(_loginController); // TODO Normaliser comme l'autre écran ou non ?
+                    _loginScreen = new LoginScreen(_loginController);
                     swapScreen(_loginScreen, true);
                 break;
                 case WelcomeScreen.NAVKEY:

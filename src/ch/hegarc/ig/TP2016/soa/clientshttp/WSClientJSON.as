@@ -11,6 +11,8 @@ package  ch.hegarc.ig.TP2016.soa.clientshttp
 {
 import ch.hegarc.ig.TP2016.utilities.Constantes;
 
+import flash.net.URLRequestHeader;
+
 import flash.utils.Dictionary;
 import flash.net.URLVariables;
 import flash.net.URLRequest;
@@ -50,6 +52,7 @@ import flash.net.URLRequestMethod;
 			_request = new URLRequest(url);
 			_request.contentType = Constantes.CONTENT_TYPE_FORM; // Nécessaire pour passer les paramètres en POST ! Sinon ils ne sont pas traités sur le serveur
 			_request.method = URLRequestMethod.POST;
+			_request.manageCookies = true;
 			
 			if(params){
 				_urlVariables = new URLVariables();
@@ -73,6 +76,7 @@ import flash.net.URLRequestMethod;
 			_requestLoader.addEventListener( SecurityErrorEvent.SECURITY_ERROR, httpRequestSecurityError );
 			
 			_requestLoader.load(_request);
+
 		}
 		
 		private function onHttpResponseStatus(e:HTTPStatusEvent):void{

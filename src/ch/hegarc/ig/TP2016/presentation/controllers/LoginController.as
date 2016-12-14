@@ -6,11 +6,6 @@ package ch.hegarc.ig.TP2016.presentation.controllers {
 import ch.hegarc.ig.TP2016.business.User;
 import ch.hegarc.ig.TP2016.services.TP2016Services;
 
-import flash.net.URLRequest;
-import flash.net.URLRequestMethod;
-import flash.net.URLVariables;
-import flash.net.navigateToURL;
-
 import starling.events.EventDispatcher;
 
     public class LoginController extends EventDispatcher{

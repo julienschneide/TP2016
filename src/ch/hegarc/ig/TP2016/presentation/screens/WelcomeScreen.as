@@ -24,9 +24,13 @@ import starling.text.TextField;
 
         private var _welcomeLabel:Label;
         private var _controller:WelcomeController;
-        //Boutton de navigation vers Login Screen
+        //Bouton de navigation vers Login Screen
         private var _btnNavLogin:Button;
-        //Boutton fonction upper
+        //Bouton de navigation vers les services Spring
+        private var _btnNavSpring:Button;
+        //Bouton de navigation vers les services Vanilla
+        private var _btnNavVanilla:Button;
+        //Bouton fonction upper
         private var _tiToUpper:TextInput;
         private var _btnUpper:Button;
         private var _UpperLabel:Label;
@@ -54,9 +58,14 @@ import starling.text.TextField;
             group.addChild(_welcomeLabel);
 
             _btnNavLogin = new Button();
-            _btnNavLogin.label = "Vers la page de Login";
+            _btnNavLogin.label = "Gestion de l'authentification LDAP de Login";
             _btnNavLogin.addEventListener(Event.TRIGGERED, goToLoginScreen);
             group.addChild(_btnNavLogin);
+
+            _btnNavSpring = new Button();
+            _btnNavSpring.label = "Services Spring";
+            _btnNavSpring.addEventListener(Event.TRIGGERED, goToSpringScreen);
+            group.addChild(_btnNavSpring);
 
             _tiToUpper = new TextInput();
             _tiToUpper.text = "miniscule";
@@ -72,6 +81,12 @@ import starling.text.TextField;
         private function goToLoginScreen(event:Event):void
         {
             var navEvent:NavigationEvent = new NavigationEvent(NavigationEvent.CHANGE_SCREEN, {id: LoginScreen.NAVKEY}, true);
+            dispatchEvent(navEvent);
+        }
+
+        private function goToSpringScreen(event:Event):void
+        {
+            var navEvent:NavigationEvent = new NavigationEvent(NavigationEvent.CHANGE_SCREEN, {id: SpringScreen.NAVKEY}, true);
             dispatchEvent(navEvent);
         }
 
