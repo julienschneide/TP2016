@@ -51,12 +51,13 @@ import starling.text.TextField;
             this.addChild( group );
             var layout:VerticalLayout = new VerticalLayout();
             layout.gap = 10;
+            layout.paddingTop = 25;
             group.layout = layout;
 
-            _welcomeLabel = new Label();
+            /*_welcomeLabel = new Label();
             _welcomeLabel.text = "Bienvenue dans l'application TP2016";
             group.addChild(_welcomeLabel);
-
+*/
             _btnNavLogin = new Button();
             _btnNavLogin.label = "Gestion de l'authentification LDAP de Login";
             _btnNavLogin.addEventListener(Event.TRIGGERED, goToLoginScreen);

@@ -48,6 +48,7 @@ import feathers.controls.Button;
             this.addChild( group );
             var layout:VerticalLayout = new VerticalLayout();
             layout.gap = 10;
+            layout.paddingTop = 25;
             group.layout = layout;
 
             var usernameLabel:Label = new Label();
@@ -66,7 +67,7 @@ import feathers.controls.Button;
             group.addChild(_password);
 
             _btnConnect = new Button();
-            _btnConnect.label = "Se connecter";
+            _btnConnect.label = "Login";
             //_btnConnect.addEventListener(Event.TRIGGERED, seConnecter(_username.text,_password.text));
             _btnConnect.addEventListener(Event.TRIGGERED, connectionTriggered);
             group.addChild(_btnConnect);

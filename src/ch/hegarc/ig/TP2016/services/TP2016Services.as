@@ -42,6 +42,11 @@ public class TP2016Services extends EventDispatcher{
 
     private function authentificationCompleted(json:Object):void{
         trace(json.login + json.connectedUser);
+
+        var message:Object = new Object();
+        message.login = json.login;
+        dispatchEventWith(starling.events.Event.COMPLETE, false, message);
+
         /*if (json.login = "SUCCESS"){
             var user:User = new User()
         }*/
@@ -65,7 +70,11 @@ public class TP2016Services extends EventDispatcher{
     }
 
     private function toUpperCompleted(json:Object):void{
+        var message:Object = new Object();
+        message.word = json.word;
 
+        trace("service Mot majusucle : " + json.word);
+        dispatchEventWith(starling.events.Event.COMPLETE, false, message);
     }
 
     /**

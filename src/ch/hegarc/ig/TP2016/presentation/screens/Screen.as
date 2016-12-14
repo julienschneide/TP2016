@@ -59,8 +59,8 @@ package ch.hegarc.ig.TP2016.presentation.screens {
 
             // Ancre en haut à droite
             var topLeftAnchor:AnchorLayoutData = new AnchorLayoutData();
-            topLeftAnchor.top = 25;
-            topLeftAnchor.left = 25;
+            topLeftAnchor.top = 5;
+            topLeftAnchor.left = 5;
 
             // Titre de l'écran
             _title = new Label();

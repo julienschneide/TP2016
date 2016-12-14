@@ -22,14 +22,13 @@ import starling.events.EventDispatcher;
          * @param password Mot de passe saisi
          */
         public function authentification(username:String, password:String):void{
-
             TP2016Services.getInstance().addEventListener(starling.events.Event.COMPLETE, authentificationCompleted)
             TP2016Services.getInstance().authentificate(username, password);
         }
 
         private function authentificationCompleted(event:starling.events.Event):void{
             TP2016Services.getInstance().removeEventListener(starling.events.Event.COMPLETE, authentificationCompleted);
-
+            trace ("dans le controller :" + event.data.login);
         }
 
         public function logout():void{

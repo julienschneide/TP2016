@@ -53,7 +53,7 @@ import flash.net.URLRequestMethod;
 			_request.contentType = Constantes.CONTENT_TYPE_FORM; // Nécessaire pour passer les paramètres en POST ! Sinon ils ne sont pas traités sur le serveur
 			_request.method = URLRequestMethod.POST;
 			_request.manageCookies = true;
-			
+
 			if(params){
 				_urlVariables = new URLVariables();
 				

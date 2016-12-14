@@ -13,6 +13,7 @@ package ch.hegarc.ig.TP2016.utilities {
 
         public static const VANILLA_URL:String = "https://campusheg.vanillacommunity.com/api/v1/"
         public static const VANILLA_TOKEN:String = "af852e808af39185d20745e7c2bc7823";
+
         // Adresse des web services //
         public static const LOGIN_URL:String = SERVER_ROOT_URL + "login";
         public static const LOGOUT_URL:String = SERVER_ROOT_URL + "logout";

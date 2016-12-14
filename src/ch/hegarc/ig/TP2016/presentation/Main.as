@@ -2,6 +2,7 @@ package ch.hegarc.ig.TP2016.presentation {
 
 import ch.hegarc.ig.TP2016.presentation.controllers.DiscussionsListController;
 import ch.hegarc.ig.TP2016.presentation.controllers.LoginController;
+import ch.hegarc.ig.TP2016.presentation.controllers.SpringController;
 import ch.hegarc.ig.TP2016.presentation.controllers.WelcomeController;
 import ch.hegarc.ig.TP2016.presentation.events.NavigationEvent;
 import ch.hegarc.ig.TP2016.presentation.menu.MainMenu;
@@ -47,6 +48,8 @@ import starling.text.TextField;
         private var _loginController:LoginController;
         /** Contrôleur de la vue d'accueil */
         private var _welcomeControler:WelcomeController;
+        /** Contrôleur de la vue Spring */
+        private var _springControler:SpringController;
         /** Contrôleur de la vue de listing discussions Vanilla */
         private var _discussionsListControler:DiscussionsListController;
 
@@ -62,6 +65,7 @@ import starling.text.TextField;
 
             _loginController = new LoginController();
             _welcomeControler = new WelcomeController();
+            _springControler = new SpringController();
             _discussionsListControler = new DiscussionsListController();
 
             _currentScreen = null;
@@ -131,6 +135,14 @@ import starling.text.TextField;
                     _welcomeScreen = new WelcomeScreen(_welcomeControler);
                     swapScreen(_welcomeScreen, true);
                 break;
+                case SpringScreen.NAVKEY:
+                    _springScreen = new SpringScreen(_springControler);
+                    swapScreen(_springScreen, true);
+                break;
+                /*case DiscussionsListScreen.NAVKEY:
+                    _DiscussionsListScreen = new SpringScreen(_discussionsListControler);
+                    swapScreen(_DiscussionsListScreen, true);
+                    break;*/
             }
         }
 
